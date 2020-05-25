@@ -1,4 +1,4 @@
-FROM gcr.io/cloud-builders/kubectl
+FROM jitesoft/kubectl
 
 LABEL version="1.0.0"
 LABEL name="kubectl"
