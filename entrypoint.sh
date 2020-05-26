@@ -6,4 +6,4 @@ set -e
 echo "$KUBE_CONFIG_DATA" | base64 -d > /tmp/config
 export KUBECONFIG=/tmp/config
 
-sh -c "kubectl${KUBECTL_VERSION:+.${KUBECTL_VERSION}} $*"
+sh -c "kubectl $*"
